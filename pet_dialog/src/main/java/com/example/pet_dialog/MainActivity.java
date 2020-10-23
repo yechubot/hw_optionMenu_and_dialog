@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                     dial_petContents.setText("토끼 설명 쭉 나와 ");
                     builder.setTitle("토끼 설명");
                 }
-
+                builder.setView(dialogView); // 처음에 까먹고 안넣어서 제대로 안나왔음 
                 builder.setPositiveButton("닫기", null);
                 AlertDialog dialog = builder.create();
                 dialog.show();
